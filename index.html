@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
 
     <!-- Basic Page Needs
@@ -12,46 +13,25 @@
 
     <title>MOBO Accounting</title>
 
-    <!-- FONTS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
 
     <!-- Header with navigation 
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <header>
         <nav class="container">
-            <input type="checkbox" id="menu-burger"> <!-- Hamburger Menu -->
-            <label id="burger" for="menu-burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-            <ul class="main-navigation" id="menu" aria-hidden="true"><!-- Content of Hamburger menu small screens -->
+            <ul>
+                <!-- Content of Hamburger menu small screens -->
                 <li><a href="#about-us">About us</a></li>
                 <li><a href="#our-mission">Our mission</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#our-prices">Our prices</a></li>
             </ul>
-            <ul class="main-navigation" id="menu-big"><!-- Content of main menu large screens -->
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#our-mission">Our mission</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#our-prices">Our prices</a></li>
-            </ul>
-
-            <a href="#home">
-                <img src="images/logo-default-151x49.webp" alt="landing-logo">
-            </a>
         </nav>
     </header>
 
@@ -59,30 +39,30 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <main>
 
-    <!-- Image and main heading -->
-    <section class="landing" id="home">
-        <div class="container">
-            <h1 >MOBO</h1>
-            <h5>МОБИЛНО СЧЕТОВОДСТВО</h5>
-            <p><em>работете спокойно</em></p>
-            <div class="line-main-heading"></div>
-            <a href="#" class="button">научи повече</a>
-            <p class="picture-credits"><small>Photo by rawpixel on Unsplash</small></p>
-        </div>
-        <div class="background-container"></div>
-    </section>
+        <!-- Image and main heading -->
+        <section class="landing" id="home">
+            <div class="container">
+                <h1>MOBO</h1>
+                <h5>МОБИЛНО СЧЕТОВОДСТВО</h5>
+                <p><em>работете спокойно</em></p>
+                <div class="line-main-heading"></div>
+                <a href="#" class="button">научи повече</a>
+                <p class="picture-credits"><small>Photo by rawpixel on Unsplash</small></p>
+            </div>
+            <div class="background-container"></div>
+        </section>
 
-    <!-- За нас -->
-    <section class="container" id="about-us">
-        <h3>Кои сме ние...</h3>
-        <p>
-            Счетоводна къща Христоскова-Добарова предлага счетоводна услуга <b>MOBO</b>.</p>
-        <p>С услугата мобилно счетоводство не губите време в разнасяне на документи.
-            Включва цялостно счетоводство, доставка на документи от и до работното ви място 
-            и всички държавни институции.</p>
-        <p>С опит над 20 години във всички търговски сфери - производство, търговия, хазард,
-            логистика...</p>
-    </section>
+        <!-- За нас -->
+        <section class="container" id="about-us">
+            <h3>Кои сме ние...</h3>
+            <p>
+                Счетоводна къща Христоскова-Добарова предлага счетоводна услуга <b>MOBO</b>.</p>
+            <p>С услугата мобилно счетоводство не губите време в разнасяне на документи.
+                Включва цялостно счетоводство, доставка на документи от и до работното ви място
+                и всички държавни институции.</p>
+            <p>С опит над 20 години във всички търговски сфери - производство, търговия, хазард,
+                логистика...</p>
+        </section>
 
 
 
@@ -90,6 +70,16 @@
 
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
