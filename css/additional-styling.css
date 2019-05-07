@@ -1,0 +1,145 @@
+/* Syling of buttons links etc */
+
+/*General button styling from https://tympanus.net/Development/ButtonStylesInspiration/*/
+
+.button {
+	float: left;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 1em 0;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+    position: relative;
+    z-index: 1;
+    border: 1px solid;
+    font-weight: 600;
+    transition: border-color 0.4s, color 0.4s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button:hover {
+	color: #fff;
+	border-color: #37474f;
+}               
+
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #37474f;
+	z-index: -1;
+	opacity: 0;
+	transform: scale3d(0.7, 1, 1);
+	transition: transform 0.4s, opacity 0.4s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button:hover::before {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+/*Input button style*/
+
+.button-input {
+    border: none;
+	color: #474c58;
+    position: relative;
+    border: 3px solid #c0a184;
+    font-weight: 600;
+    transition: border-color 0.4s, background 0.4s, color 0.4s;
+    transition-timing-function: ease-in;
+}
+
+.button-input:hover {
+    color: #E5E5E5;
+	background: #c0a184;
+	border-color: #c0a184;
+}  
+
+/*Cards hover style*/
+
+.card:hover{
+	outline: 3px solid rgba(35,190,159,0.3);
+}
+
+.line:hover{
+	width: 80%;
+	height: .4rem;
+	border-radius: .2rem;
+	margin: .4rem auto; /*this margi helps keep the text under the line static*/
+	background-color: rgba(35,190,159,0.3);
+}
+
+/*Main heading button style*/
+
+.button-main-heading {
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: rgba(55,71,79,0.7);
+	color: inherit;
+    position: relative;
+    z-index: 1;
+	border: 1px solid;
+	text-transform: uppercase;
+    font-weight: 600;
+    transition: border-color 0.4s, color 0.4s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button-main-heading:hover {
+	color: #fff;
+	border-color: #c0a184;
+}               
+
+.button-main-heading::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #c0a184;
+	z-index: -1;
+	opacity: 0;
+	transform: scale3d(0.7, 1, 1);
+	transition: transform 0.4s, opacity 0.4s;
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button-main-heading:hover::before {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+.contact-form ul.flex a{
+	position: relative;
+}
+
+.contact-form ul.flex a::after{
+	content: '';
+	position: absolute;
+	top: -7.5px;
+	left: -7.5px;
+	background-color: #a9b8c1;
+	opacity: .4;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.contact-form ul.flex a:hover::after {
+	background-color: lightblue;
+	opacity: .6;
+}

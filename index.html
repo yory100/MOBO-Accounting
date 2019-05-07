@@ -2,84 +2,268 @@
 <html lang="bg">
 
 <head>
-
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>MOBO Accounting</title>
-
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="Description" content="Template for Busines landing web page">
+    <title>Busines Landing Web Template</title>
+    <meta name="theme-color" content="#3367D6" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu-queries.css">
+    <link rel="stylesheet" href="css/additional-styling.css">
 </head>
 
 <body>
 
-    <!-- Header with navigation 
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Navigation Bar -->
+
     <header>
-        <nav class="container">
-            <ul>
-                <!-- Content of Hamburger menu small screens -->
-                <li><a href="#about-us">About us</a></li>
-                <li><a href="#our-mission">Our mission</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#our-prices">Our prices</a></li>
+        <nav>
+            <input type="checkbox" id="menu-burger">
+            <label id="burger" for="menu-burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <ul class="main-navigation" id="menu" aria-hidden="true">
+                <li><a href="#about-us">За нас</a></li>
+                <li><a href="#our-mission">Услуги</a></li>
+                <li><a href="#services">Цени</a></li>
+                <li><a href="#our-prices">Контакти</a></li>
+            </ul>
+            <ul class="main-navigation" id="menu-big">
+                <li><a href="#about-us">За нас</a></li>
+                <li><a href="#our-mission">Услуги</a></li>
+                <li><a href="#services">Цени</a></li>
+                <li><a href="#our-prices">Контакти</a></li>
+            </ul>
+
+            <a href="#home" class="logo">
+                <img src="images/logo-default-151x49.webp" alt="landing-logo">
+            </a>
+
+            <ul class="social-navigation">
+                <li><a href="https://www.facebook.com/" target="blank" aria-label="facebook link">Посетете ни във
+                        <i class="fab fa-facebook"></i></a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Home screen -->
     <main>
 
-        <!-- Image and main heading -->
-        <section class="landing" id="home">
-            <div class="container">
-                <h1>MOBO</h1>
-                <h5>МОБИЛНО СЧЕТОВОДСТВО</h5>
-                <p><em>работете спокойно</em></p>
+        <section class="slider" id="home">
+            <section class="main-heading">
                 <div class="line-main-heading"></div>
-                <a href="#" class="button">научи повече</a>
-                <p class="picture-credits"><small>Photo by rawpixel on Unsplash</small></p>
-            </div>
-            <div class="background-container"></div>
+                <h1>MOBO</h1>
+                <h2>МОБИЛНО СЧЕТОВОДСТВО</h2>
+            </section>
+            <caption>
+                <picture>
+                    <source media="(max-width: 576px)" srcset="images/bert-sz-1321445-unsplash-576.webp">
+                    <source media="(max-width: 768px)" srcset="images/bert-sz-1321445-unsplash-768.webp">
+                    <img src="images/bert-sz-1321445-unsplash-1200.webp" alt="laptop on a desk">
+                </picture>
+                <p>Photo by bert sz on Unsplash</p>
+            </caption>
         </section>
 
         <!-- За нас -->
-        <section class="container" id="about-us">
-            <h3>Кои сме ние...</h3>
-            <p>
-                Счетоводна къща Христоскова-Добарова предлага счетоводна услуга <b>MOBO</b>.</p>
-            <p>С услугата мобилно счетоводство не губите време в разнасяне на документи.
-                Включва цялостно счетоводство, доставка на документи от и до работното ви място
-                и всички държавни институции.</p>
-            <p>С опит над 20 години във всички търговски сфери - производство, търговия, хазард,
-                логистика...</p>
+        <section class="container flex" id="about">
+            <section class="main-text">
+                <h2 id="about-us">Кои сме ние...</h2>
+                <p>
+                    Счетоводна къща Христоскова-Добарова предлага счетоводна услуга <b>MOBO</b>.
+                    С услугата мобилно счетоводство не губите време в разнасяне на документи.
+                    Включва цялостно счетоводство, доставка на документи от и до работното ви място
+                    и всички държавни институции. С опит над 20 години във всички търговски сфери -
+                    производство, търговия, хазард, логистика...
+                </p>
+            </section>
+
+            <section class="main-text">
+                <h2>Имате регистрирана фирма</h2>
+                <p>
+                    Не се двоумете свържете се с нас за допълнителна информация
+                    и консултация
+                </p>
+                <button class="button-main-heading">контакт</button>
+            </section>
+
         </section>
 
+        <!-- Our mission -->
+        <section class="mission-background">
+            <div class="container flex" id="mission">
+                <section class="our-mission-img">
+                    <caption>
+                        <img src="images/landing-1-620x465.webp" alt="responsive=screens">
+                    </caption>
+                </section>
+                <section class="read-more">
+                    <h2 id="our-mission">Our Mission</h2>
+                    <p>Our mission is to manifest our clients’ concepts into dynamic
+                        functional business realities. We aim to maximize the
+                        performance of our web templates.
+                    </p>
+                    <button class="button">READ MORE</button>
+                </section>
+            </div>
+        </section>
 
+        <!-- Banner -->
 
+        <section class="banner flex">
+            <h2>We Make the Best Web Design Solutions <a href="#contact-us">contact us</a></h2>
+        </section>
+
+        <!-- Services -->
+        <section class="services-background">
+            <h2 class="heading" id="services">Our Services</h2>
+            <div class="container services">
+
+                <article class="card">
+                    <span class="fa fa-paint-brush"></span>
+                    <h3>Web Design</h3>
+                    <div class="line"></div>
+                    <p>We provide clean designs and easy-to-use interfaces, making your website look fresh and
+                        attractive.</p>
+                </article>
+                <article class="card">
+                    <span class="fa fa-headset"></span>
+                    <h3>24/7 Support</h3>
+                    <div class="line"></div>
+                    <p>Our dedicated 24/7 support service helps our customers quickly create their own web solution.</p>
+                </article>
+                <article class="card">
+                    <span class="fas fa-code"></span>
+                    <h3>Coding Services</h3>
+                    <div class="line"></div>
+                    <p>We offer our customers a variety of coding services, which help them create perfectly working
+                        websites..</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Our prices \e007    \e005 -->
+
+        <section class="flex container" id="price">
+            <section class="price-cards">
+                <h3 id="our-prices">Regular</h3>
+                <p><span class="left">$</span>10<span class="right">90</span></p>
+                <div></div>
+                <ul>
+                    <li>1 Website</li>
+                    <li>150 Email Addresses</li>
+                    <li>250 GB Storage</li>
+                    <li>900 GB Bandwidth</li>
+                    <li>Dedicated Database</li>
+                </ul>
+                <div></div>
+                <button class="button">buy now</button>
+            </section>
+            <section class="price-cards">
+                <h3>PRO Pack</h3>
+                <p><span class="left">$</span>19<span class="right">90</span></p>
+                <div></div>
+                <ul>
+                    <li>1 Website</li>
+                    <li>150 Email Addresses</li>
+                    <li>250 GB Storage</li>
+                    <li>900 GB Bandwidth</li>
+                    <li>Dedicated Database</li>
+                </ul>
+                <div></div>
+                <button class="button">buy now</button>
+            </section>
+            <section class="price-cards">
+                <h3>Premium</h3>
+                <p><span class="left">$</span>39<span class="right">90</span></p>
+                <div></div>
+                <ul>
+                    <li>1 Website</li>
+                    <li>150 Email Addresses</li>
+                    <li>250 GB Storage</li>
+                    <li>900 GB Bandwidth</li>
+                    <li>Dedicated Database</li>
+                </ul>
+                <div></div>
+                <button class="button">buy now</button>
+            </section>
+
+        </section>
     </main>
+    <!-- Footer -->
+    <footer id="contact-us">
 
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <section class="map">
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofia&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                aria-label="our location on google maps"></iframe>
+            <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+        </section>
 
+        <section class="contact-form">
+            <h3>Get in Touch</h3>
+            <form action="#" class="input-form">
+                <input type="text" name="name" placeholder="Your Name" aria-label="your name">
+                <input type="text" name="phone" placeholder="Phone" aria-label="your phone">
+                <textarea name="message" cols="30" rows="5" placeholder="Your Message"
+                    aria-label="your message"></textarea>
+                <input type="email" name="email" placeholder="E-mail" aria-label="your email">
+                <input type="submit" value="SEND MESSAGE" class="button-input" aria-label="submit button">
+            </form>
+
+            <h4>Contacts</h4>
+
+            <ul class="contacts">
+                <li>
+                    <p>adress</p>
+                    <p>Washington, USA 6036 Richmond hwy., Alexandria, VA, 2230</p>
+                </li>
+                <li>
+                    <p>phone</p>
+                    <p>+1 (409) 987–5874</p>
+                </li>
+                <li>
+                    <p>e-mail</p>
+                    <p>info@demolink.org</p>
+                </li>
+            </ul>
+
+            <div class="bottom">
+                <p class="privacy">Vector&nbsp©&nbsp 2019. <a href="#">Privacy Policy</a></p>
+
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.instagram.com/?hl=en" target="blank" aria-label="instagram link">
+                            <span class="fab fa-instagram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="blank" aria-label="facebook link">
+                            <span class="fab fa-facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=en" target="blank" aria-label="twitter link">
+                            <span class="fab fa-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://myaccount.google.com/intro" target="blank" aria-label="google plus link">
+                            <span class="fab fa-google-plus"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </footer>
 </body>
 
 </html>
